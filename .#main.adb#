@@ -1,0 +1,16 @@
+with Ada.Text_IO; use Ada.Text_IO;
+with Logs;
+with Auditoria;
+with Relatorios;
+
+procedure Main is
+begin
+    Put_Line("Starting Aircraft Audit System...");
+
+    Logs.Load_Logs;       -- Chamar função para carregar logs (exemplo)
+    Auditoria.Perform_Audit; -- Chamar função para realizar auditoria
+    Relatorios.Generate_Report; -- Chamar função para gerar relatório
+
+    Put_Line("Audit Process Completed.");
+end Main;
+
